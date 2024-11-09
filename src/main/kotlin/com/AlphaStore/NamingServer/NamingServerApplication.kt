@@ -1,13 +1,11 @@
-package com.AlphaStore.NamingServer
+package com.alphaStore.NamingServer
 
-import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer
+import org.springframework.boot.runApplication
 
 @SpringBootApplication
-@EnableEurekaServer
 class NamingServerApplication
 
 fun main(args: Array<String>) {
-    SpringApplication.run(NamingServerApplication::class.java, *args)
+	runApplication<NamingServerApplication>(*args)
 }
